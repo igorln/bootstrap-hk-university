@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-12 col-sm-6 align-items-center justify-content-between d-flex flex-wrap">
                     <img src="img/logo.png" class="img-fluid">
-                    <a href="#" class="btn btn-warning text-dark font-weight-bold px-5 py-2 col-12 col-sm-auto">
+                    <a href="#reserveForm" class="btn btn-warning text-dark font-weight-bold px-5 py-2 col-12 col-sm-auto">
                         Reserve a table
                     </a>
                 </div>
@@ -118,53 +118,59 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-8 offset-sm-2 rounded border p-0">
-                <div class="bg-warning text-white pl-3 pt-1 pb-1">
-                    <h3 class="font-weight-bold align-self-center">Reserve a Table</h3>
+            <div class="col-sm-8 offset-sm-2 p-0">
+                <div class="card">
+                    <div class="bg-warning text-white card-header">
+                        <h3 class="font-weight-bold align-self-center">Reserve a Table</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <legend for="guestsNumber" class="col-12 col-sm-2 col-form-label font-weight-bold">Number of Guests</legend>
+                                <div class="col-10 col-sm-8">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber1" value="1">
+                                        <label class="form-check-label offset-1" for="guestsNumber1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber2" value="2">
+                                        <label class="form-check-label offset-1" for="guestsNumber2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber3" value="3">
+                                        <label class="form-check-label offset-1" for="guestsNumber3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber4" value="4">
+                                        <label class="form-check-label offset-1" for="guestsNumber4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber5" value="5">
+                                        <label class="form-check-label offset-1" for="guestsNumber5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber6" value="6">
+                                        <label class="form-check-label offset-1" for="guestsNumber6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <legend for="guestsNumber" class="col-md-2 pl-2 pt-0 col-form-label font-weight-bold">Date and Time</legend>
+                                <div class="col-sm-3 mr-4">
+                                    <input type="date" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col-sm-3 mr-4">
+                                    <input type="time" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="offset-md-2 col-md-10 mt-3 mt-sm-5 mb-5">
+                                    <button type="submit" class="btn btn-primary font-weight-bold">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <form class="ml-3 mt-3">
-                    <div class="form-group row">
-                        <legend for="guestsNumber" class="col-12 col-sm-2 col-form-label mr-3 font-weight-bold">Number of Guests</legend>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber1" value="1">
-                            <label class="form-check-label offset-1" for="guestsNumber1">1</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber2" value="2">
-                            <label class="form-check-label offset-1" for="guestsNumber2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber3" value="3">
-                            <label class="form-check-label offset-1" for="guestsNumber3">3</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber4" value="4">
-                            <label class="form-check-label offset-1" for="guestsNumber4">4</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber5" value="5">
-                            <label class="form-check-label offset-1" for="guestsNumber5">5</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber6" value="6">
-                            <label class="form-check-label offset-1" for="guestsNumber6">6</label>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <legend for="guestsNumber" class="col-md-2 pl-2 pt-0 col-form-label font-weight-bold">Date and Time</legend>
-                        <div class="col-sm-3 mr-4">
-                            <input type="text" class="form-control" placeholder="Date">
-                        </div>
-                        <div class="col-sm-3 mr-4">
-                            <input type="text" class="form-control" placeholder="Time">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="offset-md-2 col-md-10 mt-3 mt-sm-5 mb-5">
-                            <button type="submit" class="btn btn-primary font-weight-bold">Reserve</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
