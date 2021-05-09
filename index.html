@@ -104,7 +104,7 @@
                         <div class="form-group row">
                             <legend for="guestsNumber" class="col-12 col-sm-2 col-form-label font-weight-bold">Number of Guests</legend>
                             <div class="col-10 col-sm-8">
-                                <div class="form-check form-check-inline">
+                                <div class="form-check mt-3 form-check-inline">
                                     <input class="form-check-input" type="radio" name="guestsNumber" id="guestsNumber1" value="1">
                                     <label class="form-check-label offset-1" for="guestsNumber1">1</label>
                                 </div>
@@ -130,17 +130,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row mb-4">
+                            <legend for="guestsNumber" class="col-md-2 pt-0 col-form-label my-auto font-weight-bold">Section</legend>
+                            <div class="btn-group btn-group-toggle ml-1" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
                         <div class="form-row">
-                            <legend for="guestsNumber" class="col-md-2 pl-2 pt-0 col-form-label font-weight-bold">Date and Time</legend>
+                            <legend for="guestsNumber" class="col-md-2 pt-0 col-form-label my-auto font-weight-bold">Date and Time</legend>
                             <div class="col-sm-3 mr-4">
                                 <input type="date" class="form-control" placeholder="Date">
                             </div>
-                            <div class="col-sm-3 mr-4">
+                            <div class="col-sm-3">
                                 <input type="time" class="form-control" placeholder="Time">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="offset-md-2 col-md-10 mt-3 mt-sm-5 mb-5">
+                            <div class="offset-md-2 col-md-10 mt-3 mt-sm-5 mb-4">
                                 <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal">Cancel</button>
                                 <button type="submit" class="btn btn-primary font-weight-bold">Reserve</button>
                             </div>
