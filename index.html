@@ -41,7 +41,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="closeLogin">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-12 col-sm-6 align-items-center justify-content-between d-flex flex-wrap">
                     <img src="img/logo.png" class="img-fluid">
-                    <a role="button" class="btn btn-block nav-link btn-warning col-5 font-weight-bold" id="reserveModal">
+                    <a role="button" class="btn btn-block nav-link btn-warning col-5 font-weight-bold" id="reserveOpen">
                     Reserve Table
                     </a>
                 </div>
@@ -95,7 +95,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="font-weight-bold modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" id="closeLogin">&times;</button>
+                    <button type="button" class="close" id="reserveClose">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form id="reserveForm">
@@ -357,6 +357,14 @@
             );
             $("#closeLogin").click(function(){
                     $("#loginModal").modal('hide');
+                }
+            );
+            $("#reserveOpen").click(function(){
+                    $("#reserveModal").modal('show');
+                }
+            );
+            $("#reserveClose").click(function(){
+                    $("#reserveModal").modal('hide');
                 }
             );
     </script>
