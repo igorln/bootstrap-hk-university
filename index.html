@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a id="login">
+                    <a id="openLogin">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>    
             </div>        
@@ -95,7 +95,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="font-weight-bold modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="closeLogin">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form id="reserveForm">
@@ -351,10 +351,12 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-    </script>
-        <script>
-            $("#login").click(function(){
+            $("#openLogin").click(function(){
                     $("#loginModal").modal('show');
+                }
+            );
+            $("#closeLogin").click(function(){
+                    $("#loginModal").modal('hide');
                 }
             );
     </script>
